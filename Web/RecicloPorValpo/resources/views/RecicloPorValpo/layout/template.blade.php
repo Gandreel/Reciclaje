@@ -8,6 +8,18 @@
 		<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" media="all"/>
 		<link href="{{asset('css/estilo.css')}}" rel="stylesheet" type="text/css" media="all"/>	
 	<body>
+
+		<!-- Menu -->
+		<ul>
+			<li><a href="{{URL::to('/')}}">Inicio</a></li>
+			<li>Encuesta
+				<ul>
+					<li><a href="{{URL::to('Encuesta')}}">Encuesta Informativa</a></li>
+				</ul>
+			</li>
+			<li>Aprende a Reciclar</li>
+		</ul>
+
 		<!-- Lugar donde estara el contenido de la pagina -->
 		@yield('contenido')
 			

@@ -12,13 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('index', function () {
     return view('RecicloPorValpo/Index');
 });
 
-Route::get('Encuesta', function () {
-    return view('RecicloPorValpo/Formulario1');
+Route::get('Encuesta',function(){
+	return view('RecicloPorValpo/Formulario1');
 });
