@@ -1,6 +1,6 @@
 <?php
 
-namespace RecicloPorValpo\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

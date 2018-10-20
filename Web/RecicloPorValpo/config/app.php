@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        RecicloPorValpo\Providers\AppServiceProvider::class,
-        RecicloPorValpo\Providers\AuthServiceProvider::class,
-        // RecicloPorValpo\Providers\BroadcastServiceProvider::class,
-        RecicloPorValpo\Providers\EventServiceProvider::class,
-        RecicloPorValpo\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 
