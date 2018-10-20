@@ -10,7 +10,7 @@
 	<body>
 
 		<!-- Menu -->
-		<img src="{{asset('img/Valpo-1.png')}}" class="Foto-Menu">
+		<img src="{{asset('img/Valpo3.jpg')}}" class="Foto-Menu">
 		<ul>
 			<li><a href="{{URL::to('/')}}">Inicio</a></li>
 			<li>Encuesta
