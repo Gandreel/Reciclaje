@@ -5,7 +5,8 @@
 		<title>RecicloPorValpo</title>
 		
 		<!-- Integracion de Boostrap (CSS) -->
-		<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" media="all"/>	
+		<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" media="all"/>
+		<link href="{{asset('css/estilo.css')}}" rel="stylesheet" type="text/css" media="all"/>	
 	<body>
 		<!-- Lugar donde estara el contenido de la pagina -->
 		@yield('contenido')

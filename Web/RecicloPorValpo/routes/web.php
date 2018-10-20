@@ -19,6 +19,6 @@ Route::get('index', function () {
     return view('RecicloPorValpo/Index');
 });
 
-Route::get('encuesta', function () {
+Route::get('Encuesta', function () {
     return view('RecicloPorValpo/Formulario1');
 });
