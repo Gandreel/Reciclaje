@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/*reinicio de pagina*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*cambia el modelo de las cajas,para que el margen y el espaciado no se modifique/agrege*/ }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px; }
+
+/*texto del header*/
+.heading-primary {
+  color: #fff;
+  /*setea el color de la letra a blanco*/
+  text-transform: uppercase;
+  /*transforma todo el texto a mayusculas*/
+  backface-visibility: hidden;
+  /*usado para eliminar un pequeño error de la animacion*/
+  margin-bottom: 60px;
+  /*titulo del header*/
+  /*subtitulo del header*/ }
+  .heading-primary--main {
+    display: block;
+    /*muestra esta seccion como un bloque aparte de su propio div*/
+    font-size: 60px;
+    /*setea el largo de la letra del bloque  a 60px*/
+    font-weight: 400;
+    /*setea el grosor de la letra a 400*/
+    letter-spacing: 35px;
+    /*setea el espaciado entre palabras a 35px*/
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    /*animation-iteration-count: 3;*/
+    /*la cantidad de veces que se repite la animacion*/
+    animation-timing-function: ease-out;
+    /*hace que al comenzar la animacion esta parta rapido y termine lenta*/ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 20px;
+    /*setea el largo de la letra del bloque  a 20px*/
+    font-weight: 700;
+    /*setea el grosor de la letra a 400*/
+    letter-spacing: 17.4px;
+    /*setea el espaciado entre palabras a 35px*/
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    /*animation-iteration-count: 3;*/
+    animation-timing-function: ease-in; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(-2deg) skewx(20deg);
+    text-transform: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-xl {
+  margin-bottom: 10rem; }
+
+.u-margin-bottom-l {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-m {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-s {
+  margin-bottom: 1.5rem; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    /*el titulo es invisible*/
+    transform: translateX(-150px);
+    /*el subtitulo es corrido 150px a la izquierda*/ }
+  50% {
+    /*al medio de la animacion*/
+    opacity: 0.5;
+    /*el titulo es ta al 50% de opacidad*/ }
+  100% {
+    /*al final de la animacion*/
+    opacity: 1;
+    transform: translate(0);
+    /*el titulo es corrido a su punto de origen*/ } }
+
+/*animacion donde el subtitulo del header aparece de la derecha al centro*/
+@keyframes moveInRight {
+  /*instanciandola*/
+  0% {
+    /*inicio de la animacion*/
+    opacity: 0;
+    /*el subtitulo es invisible*/
+    transform: translateX(150px);
+    /*el subtitulo es corrido 150px a la derecha*/ }
+  50% {
+    /*al medio de la animacion*/
+    opacity: 0.5;
+    /*el subtitulo es ta al 50% de opacidad*/ }
+  100% {
+    /*fin de la animacion*/
+    opacity: 1;
+    /*el subtitulo es invisible*/
+    transform: translate(0);
+    /*el subtitulo es corrido a su punto de origen*/ } }
+
+@keyframes logorotation {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+    animation-timing-function: ease-in; }
+  20% {
+    opacity: 1;
+    transform: rotate(72deg);
+    animation-timing-function: ease-in; }
+  40% {
+    opacity: 1;
+    transform: rotate(144deg);
+    animation-timing-function: ease; }
+  60% {
+    opacity: 1;
+    transform: rotate(216deg);
+    animation-timing-function: ease; }
+  80% {
+    opacity: 1;
+    transform: rotate(288deg);
+    animation-timing-function: ease-out; }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+    animation-timing-function: ease-out; } }
+
+@keyframes parpadeo {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes moveInbutton {
+  /*instanciandola*/
+  0% {
+    /*inicio de la animacion*/
+    opacity: 0;
+    /*el subtitulo es invisible*/
+    transform: translatey(500px);
+    /*el subtitulo es corrido 150px a la derecha*/ }
+  100% {
+    /*fin de la animacion*/
+    opacity: 1;
+    /*el subtitulo es invisible*/
+    transform: translate(0);
+    /*el subtitulo es corrido a su punto de origen*/ } }
+
+.btn:link, .btn:visited {
+  /*define el actuar del boton como enlace y despues de ser clickeado*/
+  text-transform: uppercase;
+  /*transforma el texto a mayusculas*/
+  text-decoration: none;
+  /*quita el __ del texto*/
+  padding: 15px 40px;
+  /*padding de 15px a la izquierda y derecha ,
+         y padding de 40px arriba y abajo */
+  display: inline-block;
+  /*lo encasilla en su propia caja*/
+  border-radius: 100px;
+  /*redondea los bordes del bot*/
+  transition: all 0.2s;
+  /*hace que todo se pueda animar*/
+  position: relative;
+  font-size: 1.6rem; }
+
+.btn:hover {
+  /*define el actuar del boton al posisionar el mouse encima de este*/
+  transform: translateY(-3px);
+  /*sube el boton 3px hacia arriba 
+          (el valor es negativo ya que css desplaza el eje y de abajo hacia arriba)*/
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* 0=X,10px=Y,20px = blur de la sombra,color en transparencia*/ }
+  .btn:hover::after {
+    /*describe la manera en la que se comportara 
+              el boton tras haber colocado el mouse sobre el*/
+    transform: scaleX(1.4) scaleY(1.6);
+    /*agranda el elemento la cantidad de veces en el paréntesis*/
+    opacity: 0; }
+
+.btn:active {
+  /*define el actuar del boton al ser clickeado*/
+  transform: translateY(-1px);
+  /*le da el efecto de ser clickeado*/
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* 0=X,5px=Y,10px = blur de la sombra,color en transparencia,
+          al hacer que Y sea mas pequeño se da el efecto de que se esta precionando el boton*/ }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn::after {
+  /*define el actuar del boton despues de ser clickeado*/
+  content: "";
+  display: inline-block;
+  /**/
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*dice la ubicacion cuando estan detras de otro elemento*/
+  transition: all 0.4s; }
+
+.btn--animated {
+  /*clase del boton en movimiento del header */
+  animation-name: moveInbutton;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+  /*aplica los cambios de la animacion antes de que esta comience*/ }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0px); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 1rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 5rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8); }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem; }
+
+/*header de la pagina*/
+.header {
+  height: 95vh;
+  /*vh es en relacion con el diametro del viewport*/
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  /*imagen de fondo*/
+  background-size: cover;
+  /*manera en la que 
+      la imagen se mostrara en el sitio*/
+  background-position: top;
+  /*al cambiar las dimensiones del navegador, la imagen
+       realiza un crop en el bottom y a los lados,
+       pero no en la parte de arriba*/
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /*contenedor del logo*/
+  /*imagen del header*/
+  /*cajon donde se encuentra centrado el slogan de la pagina*/ }
+  .header__logo-box {
+    position: absolute;
+    /*sobreponer ensima de todo lo que este abajo*/
+    top: 40px;
+    /*correr la imagen a 40px del eje y*/
+    left: 40px;
+    /*correr la imagen a 40px del eje x*/
+    backface-visibility: hidden; }
+  .header__logo {
+    height: 35px;
+    /*setea el largo de la imagen a 35px*/ }
+  .header__logo:hover {
+    animation-name: logorotation;
+    animation-duration: 1s;
+    transition: transform 0.2s ease-in-out; }
+  .header__text-box {
+    position: absolute;
+    /*sobreponer ensima de todo lo que este abajo*/
+    top: 40%;
+    /*correr la imagen a 40px del eje y*/
+    left: 50%;
+    /*correr la imagen a 50px del eje y*/
+    transform: translate(-50%, -50%);
+    /*correr el centro del cajon del borde al centro*/
+    text-align: center;
+    /*coloca los elementos de texto al centro de la pagina, es usado en el
+    .btn:link, .btn:visited {  display: inline-block; }*/ }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 *6rem)/3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/4); }
+  .row .col-2-of-3 {
+    width: calc(2* ((100% - 2 * 6rem)/3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 6rem)/4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 *6rem)/4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 *6rem)/4) + 2*6rem); }
+
+.section-about {
+  background-color: #f7f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -20vh; }
+
+/*setea los valores generales del body*/
