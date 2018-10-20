@@ -7,22 +7,12 @@
 		<!-- Integracion de Boostrap (CSS) -->
 		<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" media="all"/>
 		<link href="{{asset('css/estilo.css')}}" rel="stylesheet" type="text/css" media="all"/>	
-<<<<<<< HEAD
 	<body>	
 		<div class="row"> 
 	
 			<!-- Menu -->
 			<div class="col-12">
-				<img src="{{asset('img/Valpo-1.png')}}" class="Foto-Menu">
-=======
-	<body>
-
-		<!-- Menu -->
-		<img src="{{asset('img/Valpo3.jpg')}}" class="Foto-Menu">
-		<ul>
-			<li><a href="{{URL::to('/')}}">Inicio</a></li>
-			<li>Encuesta
->>>>>>> 8d1602441a91bbaa0925ddd5f60dfa9ae423846c
+				<img src="{{asset('img/Valpo3.jpg')}}" class="Foto-Menu">
 				<ul>
 					<li><a href="{{URL::to('/')}}">Inicio</a></li>
 					<li>Encuesta
@@ -33,7 +23,6 @@
 					<li>Aprende a Reciclar</li>
 				</ul>
 			</div>
-		</div>
 
 		<!-- Lugar donde estara el contenido de la pagina -->
 		@yield('contenido')
