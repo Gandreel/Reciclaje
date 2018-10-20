@@ -10,20 +10,21 @@
 	<body>	
 		<div class="row"> 
 	
-			<!-- Menu -->
-			<div class="col-12">
+			<!-- Foto Portada -->
+			<div class="col-12 menu">
 				<img src="{{asset('img/Valpo3.jpg')}}" class="Foto-Menu">
-				<ul>
-					<li><a href="{{URL::to('/')}}">Inicio</a></li>
-					<li>Encuesta
-						<ul>
-							<li><a href="{{URL::to('Encuesta')}}">Encuesta Informativa</a></li>
-						</ul>
-					</li>
-					<li>Aprende a Reciclar</li>
-				</ul>
 			</div>
 
+			<!-- Navegador -->
+			<div class="nav col-12" style="background:#fff">
+				<nav class="nav">
+					<a class="nav-item nav-link" href="{{URL::to('/')}}">Inicio</a>
+					<a class="nav-item nav-link" href="{{URL::to('Encuesta')}}">Encuesta</a>
+				</nav>
+			</div>
+
+		</div>
+		
 		<!-- Lugar donde estara el contenido de la pagina -->
 		@yield('contenido')
 
