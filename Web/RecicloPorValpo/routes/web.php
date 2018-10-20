@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('Encuesta',function(){
 	return view('RecicloPorValpo/Formulario1');
 });
+
+Route::get('login',function(){
+	return view('RecicloPorValpo/login');
+});
+
+

@@ -13,6 +13,17 @@
 			<!-- Foto Portada -->
 			<div class="col-12 menu">
 				<img src="{{asset('img/Valpo3.jpg')}}" class="Foto-Menu">
+				<ul>
+					<li><a href="{{URL::to('/')}}">Inicio</a></li>
+					<li>Encuesta
+						<ul>
+							<li><a href="{{URL::to('Encuesta')}}">Encuesta Informativa</a></li>
+						</ul>
+					</li>
+					<li>Aprende a Reciclar</li>
+					<li><a href="{{URL::to('login')}}">Login</a></li>
+				</ul>
+
 			</div>
 
 			<!-- Navegador -->
