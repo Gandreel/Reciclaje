@@ -21,7 +21,9 @@
 						</ul>
 					</li>
 					<li>Aprende a Reciclar</li>
+					<li><a href="{{URL::to('login')}}">Login</a></li>
 				</ul>
+
 			</div>
 
 		<!-- Lugar donde estara el contenido de la pagina -->
