@@ -14,8 +14,8 @@
 <!-- Lugar de posición del contenido -->
 @section('contenido')
     <div class="contenedor-form">
-        <div class="toggle">
-            <span id="p1">No Presionar</span>
+        <div>
+            
         </div>
         
         <div class="formulario">
@@ -25,7 +25,7 @@
                 <input type="password" name="password" placeholder="Contraseña" required>
                 <select name="tipo" class="algo">
                     <option value="1">Particular</option>
-                    <option value="2">Comunidad</option>
+                    <option value="2">Comuni</option>
                 </select>
                 <input type="submit" value="Iniciar Sesion">
                 <input type="hidden" name="_token" value="{{csrf_token()}}"/>

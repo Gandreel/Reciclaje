@@ -20,6 +20,7 @@
 				<nav class="nav">
 					<a class="nav-item nav-link" href="{{URL::to('/')}}">Inicio</a>
 					<a class="nav-item nav-link" href="{{URL::to('Encuesta')}}">Encuesta</a>
+					<a class="nav-item nav-link" href="{{URL::to('login')}}">login</a>
 				</nav>
 			</div>
 
